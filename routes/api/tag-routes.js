@@ -26,8 +26,8 @@ router.get("/:id", async (req, res) => {
 router.post("/", (req, res) => {
   // create a new tag
   Tag.create(req.body)
-    .then((newCategory) => {
-      res.json(newCategory);
+    .then((newTag) => {
+      res.json(newTag);
     })
     .catch((err) => {
       res.json(err);
