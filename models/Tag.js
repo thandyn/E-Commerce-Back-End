@@ -10,10 +10,8 @@ Tag.init(
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: 10,
-      validates: {
-        isNumeric: true,
-      },
+      primaryKey: true,
+      autoIncrement: true,
     },
     tag_name: {
       type: DataTypes.STRING,
